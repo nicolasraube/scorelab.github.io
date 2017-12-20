@@ -5,12 +5,12 @@ shortTitle: Blog and Gallery
 permalink: /blog/
 ---
 
-<div class="container mtb">
+<div class="margin container mtb">
     <div class="row">
-        <! -- BLOG POSTS LIST -->
+        <!-- BLOG POSTS LIST -->
         <div class="col-lg-8">
             {% for post in site.categories['blog'] %}
-            <! -- Blog Post -->
+            <!-- Blog Post -->
             <div class="row">
                 <a href="{{ post.url | prepend: site.baseurl }}" class="col-lg-2">
                     <img class="img-responsive" src="{{ '/assets/img/blog/' | prepend: site.baseurl }}{{ post.img }}">
